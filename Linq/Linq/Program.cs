@@ -57,6 +57,14 @@ namespace Linq
             //حمع اعضا 
             int Sum = (from n in numbers select n).Sum();
 
+
+            List<string> Names = new List<string>();
+            Names.Add("Mehrnaz");
+            Names.Add("Najmeh");
+            Names.Add("Yegeneh");
+            Names.Add("Zeynab");
+            Names.Add("Fatemeh");
+
         }
     }
 }
