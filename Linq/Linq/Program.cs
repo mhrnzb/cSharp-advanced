@@ -25,7 +25,10 @@ namespace Linq
 
             int[] result2 = (from n in numbers orderby n descending select n).ToArray();
 
-            int[] result3 = (from n in numbers where n>30 && n<80 select n).ToArray();
+            int[] result3 = (from n in numbers where n>30 && n<80 
+                             orderby n descending select n).ToArray();
+
+            int result4 = (from n in numbers where n == 3 select n).First();
 
 
              
