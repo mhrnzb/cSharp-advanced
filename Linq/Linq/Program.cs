@@ -65,6 +65,9 @@ namespace Linq
             Names.Add("Zeynab");
             Names.Add("Fatemeh");
 
+            var res1 =(from n in Names select n).ToList();
+
+            var res2 = (from n in Names where n.ToLower().Contains("m") select n ).ToList();
         }
     }
 }
