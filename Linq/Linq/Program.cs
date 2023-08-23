@@ -33,6 +33,9 @@ namespace Linq
             int result5 = (from n in numbers where n == 2 select n).FirstOrDefault();
 
 
+            int result6 = (from n in numbers where n == 3 select n).Single();
+
+            int result7 = (from n in numbers where n == 2 select n).SingleOrDefault();
 
 
 
