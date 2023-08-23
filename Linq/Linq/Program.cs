@@ -38,6 +38,14 @@ namespace Linq
             int result7 = (from n in numbers where n == 2 select n).SingleOrDefault();
 
 
+            //var is annonumous data type that added with LINQ
+            // اولین مقداری که بگیره ، نوعش را مشخص می کند و برای دستورات لینک از آن استفاده می شود 
+            var I1 = 123;
+            var I2 = "Mehrnaz Bagheri";
+            
+
+
+
 
         }
     }
