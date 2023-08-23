@@ -30,8 +30,10 @@ namespace Linq
 
             int result4 = (from n in numbers where n == 3 select n).First();
 
+            int result5 = (from n in numbers where n == 2 select n).FirstOrDefault();
 
-             
+
+
 
 
         }
