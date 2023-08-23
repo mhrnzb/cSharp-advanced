@@ -54,6 +54,8 @@ namespace Linq
             int Max = (from n in numbers select n).Max(); 
             // کوچکترین عضو
             int Min = (from n in numbers select n).Min();
+            //حمع اعضا 
+            int Sum = (from n in numbers select n).Sum();
 
         }
     }
