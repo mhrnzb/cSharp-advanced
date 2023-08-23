@@ -25,6 +25,8 @@ namespace Linq
 
             int[] result2 = (from n in numbers orderby n descending select n).ToArray();
 
+            int[] result3 = (from n in numbers where n>30 select n).ToArray();
+
 
              
 
