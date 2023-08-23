@@ -42,10 +42,18 @@ namespace Linq
             // اولین مقداری که بگیره ، نوعش را مشخص می کند و برای دستورات لینک از آن استفاده می شود 
             var I1 = 123;
             var I2 = "Mehrnaz Bagheri";
-            
+
+            // اگه مثلا یه سایتی داشته باشی که کاربر در قسمت ثبت نام نتونه ایمیل تکراری وارد کنه ، به ضیوه ی زیر عمل می کنیم 
+
+            bool result8 = (from n in numbers where n == 2 select n).Any();
 
 
+            int count = (from n in numbers select n).Count();
 
+            // بزرگترین عضو
+            int Max = (from n in numbers select n).Max(); 
+            // کوچکترین عضو
+            int Min = (from n in numbers select n).Min();
 
         }
     }
