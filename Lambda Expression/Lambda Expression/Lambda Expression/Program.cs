@@ -61,13 +61,22 @@ namespace Lambda_Expression
 
 
             int count = (from n in numbers select n).Count();
+            //lambda :
+            var Count = numbers.Count();
 
             // بزرگترین عضو
             int Max = (from n in numbers select n).Max();
+            //lambda :
+            var max = numbers.Max();
+
             // کوچکترین عضو
             int Min = (from n in numbers select n).Min();
+            //lambda :
+            var min = numbers.Min();
             //حمع اعضا 
             int Sum = (from n in numbers select n).Sum();
+            //lambda :
+            var sum = numbers.Sum();
 
 
             List<string> Names = new List<string>();
