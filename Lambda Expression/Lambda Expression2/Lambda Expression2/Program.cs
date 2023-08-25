@@ -70,6 +70,15 @@ namespace Lambda_Expression2
                 Console.WriteLine($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
             }
 
+
+            Console.WriteLine("================== to extrcat Name  : ==================");
+
+            var result5 = people.Select(p => p.Name).ToList();
+            foreach (var p in result4)
+            {
+                Console.WriteLine($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
+            }
+
             Console.ReadKey();
         }
     }
