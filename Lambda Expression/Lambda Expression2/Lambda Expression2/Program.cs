@@ -74,6 +74,7 @@ namespace Lambda_Expression2
             Console.WriteLine("================== to extrcat Name  : ==================");
 
             var result5 = people.Select(p => p.Name).ToList();
+            var result6 = people.Select(p => new { p.Name, p.age }).ToList();
             foreach (var p in result4)
             {
                 Console.WriteLine($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
