@@ -39,10 +39,13 @@ namespace Lambda_Expression
             int result5 = (from n in numbers where n == 2 select n).FirstOrDefault();
             //lambda :
             var lambda5 = numbers.FirstOrDefault(n => n == 2);
-
+            
             int result6 = (from n in numbers where n == 3 select n).Single();
-
+            //lambda :
+            var lambda6 = numbers.Single(n => n == 3);
             int result7 = (from n in numbers where n == 2 select n).SingleOrDefault();
+            //lambda:
+            var lambda7 = numbers.SingleOrDefault(n => n == 2);
 
 
            
