@@ -36,6 +36,16 @@ namespace Lambda_Expression2
                 family = "davarzani",
                 age = 20,
             });
+
+
+            var result = people.ToList ();
+
+            foreach(var p in result)
+            {
+                Console.WriteLine ($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
+            }
+
+            Console.ReadKey();
         }
     }
 }
