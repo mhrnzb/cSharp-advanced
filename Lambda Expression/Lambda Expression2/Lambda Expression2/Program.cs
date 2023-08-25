@@ -10,6 +10,15 @@ namespace Lambda_Expression2
     {
         static void Main(string[] args)
         {
+            List <Person> people = new List <Person> ();
+
+            Person p1 = new Person ();
+            p1.PersonID = 1;
+            p1.Name = "mehrnaz";
+            p1.family = "bagheri";
+            p1.age = 20;
+            people.Add (p1);
+
         }
     }
 }
