@@ -56,6 +56,8 @@ namespace Lambda_Expression
          
 
             bool result8 = (from n in numbers where n == 2 select n).Any();
+            //lambda :
+            var lambda8 = numbers.Any(n => n == 2);
 
 
             int count = (from n in numbers select n).Count();
