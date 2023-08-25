@@ -19,6 +19,23 @@ namespace Lambda_Expression2
             p1.age = 20;
             people.Add (p1);
 
+            //object initializer 
+            Person p2 = new Person()
+            {
+                PersonID = 2,
+                Name = "najmeh",
+                family = "taheri",
+                age = 21,
+            };
+            people.Add(p2);
+
+            people.Add(new Person()
+            {
+                PersonID = 3,
+                Name = "yeganah",
+                family = "davarzani",
+                age = 20,
+            });
         }
     }
 }
