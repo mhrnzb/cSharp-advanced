@@ -39,10 +39,23 @@ namespace Lambda_Expression2
 
 
             var result = people.ToList ();
+            
 
             foreach(var p in result)
             {
                 Console.WriteLine ($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
+            }
+            Console.WriteLine("================== Sorted by age : ==================");
+            var result2 = people.OrderByDescending(p => p.age).ToList();
+            foreach (var p in result2)
+            {
+                Console.WriteLine($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
+            }
+            Console.WriteLine("================== Show special Name : ==================");
+            var result3 = people.Where(p => p.Name.ToLower() == "mehrnaz").ToList();
+            foreach (var p in result3)
+            {
+                Console.WriteLine($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
             }
 
             Console.ReadKey();
