@@ -94,6 +94,20 @@ namespace Lambda_Expression2
                         on p.PersonID equals c.PersonID 
                         select new {p.PersonID , p.Name ,p.family , p.age , c.CarName , c.CarModel}).ToList();
             Console.ReadKey();
+
+            // we have 101 linq expression that you can use
+
+
+            int[] numbers = { 1, 1, 2, 3, 4, 9, 10, 15, 15, 20, 25 };
+            var res1 = numbers.Distinct().ToArray();
+
+
+            var res2 = numbers.OrderByDescending(n => n).Take(3).ToArray();
+
+            var res3 = numbers.OrderByDescending(n => n).Skip(3).ToArray();
+
+            var res3 = numbers.OrderByDescending(n => n).Skip(3).Take(3).ToArray();
+
         }
     }
 }
