@@ -80,6 +80,19 @@ namespace Lambda_Expression2
                 Console.WriteLine($"ID : {p.PersonID} Name : {p.Name} Family : {p.family} Age : {p.age}");
             }
 
+            //collection initializer
+
+            List<PersonCar> Cars = new List<PersonCar>()
+            {
+                new PersonCar() {PersonID = 1 , CarName = "Pride" , CarModel=1380},
+                new PersonCar() {PersonID = 3 , CarName = "Prykan" , CarModel=1382}
+            };
+
+            //join
+
+            var join = (from p in people join c in Cars 
+                        on p.PersonID equals c.PersonID 
+                        select new {p.PersonID , p.Name ,p.family , p.age , c.CarName , c.CarModel}).ToList();
             Console.ReadKey();
         }
     }
