@@ -87,16 +87,22 @@ namespace Lambda_Expression
             Names.Add("Fatemeh");
 
             var res1 = (from n in Names select n).ToList();
+            //lambda :
+            var lam1 = Names.ToList();
 
             var res2 = (from n in Names where n.ToLower().Contains("m") select n).ToList();
+            //lambda :
+            var lam2 =Names.Where(n =>n.ToLower().Contains("m")).ToList();
 
 
             var res3 = (from n in Names where n.ToLower().StartsWith("m") select n).ToList();
-
+            //lambda :
+            var lam3 = Names.Where(n => n.ToLower().StartsWith("m")).ToList();
 
 
             var res4 = (from n in Names where n.ToLower().EndsWith("m") select n).ToList();
-
+            //lambda :
+            var lam4 = Names.Where(n => n.ToLower().EndsWith("m")).ToList();
 
         }
     }
