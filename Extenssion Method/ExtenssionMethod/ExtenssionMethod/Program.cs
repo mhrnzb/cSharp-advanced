@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ExtenssionMethod
 {
     internal class Program
@@ -20,6 +21,8 @@ namespace ExtenssionMethod
             Console.WriteLine(Amount.ToRial());
 
             Console.WriteLine(5000.ToRial());
+
+            Console.WriteLine(DateTime.Now.ToShamsi());
             Console.ReadKey();
 
         }
