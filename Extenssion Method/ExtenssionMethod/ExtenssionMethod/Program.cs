@@ -10,7 +10,10 @@ namespace ExtenssionMethod
     {
         static void Main(string[] args)
         {
+            int Amount = 25000;
+            Console.WriteLine(Amount.ToString("#,0 Rial" ));
 
+            Console.ReadKey();
 
         }
     }
